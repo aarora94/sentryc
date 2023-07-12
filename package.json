@@ -1,0 +1,25 @@
+{
+  "name": "sentryc",
+  "version": "1.0.0",
+  "description": "Home for",
+  "main": "cucumber.js",
+  "scripts": {
+    "tag": "npm test -- -t",
+    "test": "rm -rf reports && mkdir reports && cucumber-js --require cucumber.js --require step-definitions/**/*.js --require features/**/*.js --format json:reports/cucumber_report.json --format html:./reports/cucumber_report.html --format summary --format @cucumber/pretty-formatter --no-strict --publish-quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.2.0",
+    "@playwright/test": "^1.36.0",
+    "chai": "^4.3.7",
+    "cucumber-html-reporter": "^7.1.1"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "cucumber": "^6.0.7",
+    "cucumber-pretty": "^6.0.1",
+    "eslint": "^8.44.0"
+  }
+}
