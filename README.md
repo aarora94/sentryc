@@ -1,4 +1,4 @@
-Home for 
+Home for test of Login flow page of practice test automation
 
 # Install
 
@@ -6,7 +6,7 @@ Home for
 
 # Run the tests
 
-`npm test`
+`npm run test`
 
 # Report
 
